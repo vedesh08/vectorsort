@@ -486,7 +486,7 @@
             } catch (err) { alert("Save Error!"); }
         };
         function generateId(length = 8) {
-    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_';
+    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     let result = '';
     const array = new Uint8Array(length);
     crypto.getRandomValues(array);
