@@ -473,7 +473,7 @@
             try {
                 const examDir = await directoryHandle.getDirectoryHandle(exam, { create: true });
                 const diffDir = await examDir.getDirectoryHandle(diff, { create: true });
-                const name = `${exam}_${diff}_${generateId()}.png`;
+                const name = `${generateId()}.png`;
                 const fileHandle = await diffDir.getFileHandle(name, { create: true });
 
                 finalCanvas.toBlob(async (blob) => {
