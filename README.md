@@ -138,7 +138,7 @@ vectorsort/
 
 ## License
 
-Copyright (c) 2026 ExamFillip. All rights reserved.
+Copyright (c) 2026 [ExamFillip](https://examfillip.vercel.app/). All rights reserved.
 
 ### You Can
 - Use the application for personal/educational purposes
