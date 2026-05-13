@@ -130,9 +130,9 @@ vectorsort/
 
 | Version | Changes |
 |---------|---------|
-| 1.2 | Answer Key feature added (SCQ/MCQ/NUM support) |
-| 1.1 | Subject and Question Type tags added |
-| 1.0 | Initial release with Exam and Difficulty tags |
+| 1.3 | Answer Key feature added (SCQ/MCQ/NUM support) |
+| 1.2 | Subject and Question Type tags added |
+| 1.1 | Initial release with Exam and Difficulty tags |
 
 ---
 
