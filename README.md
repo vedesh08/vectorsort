@@ -2,7 +2,7 @@
 
 A PDF-based question extraction and sorting tool for exam preparation. Extract questions from PDF question papers, crop specific questions, and save them organized by exam type, subject, difficulty level, and question type into a structured folder system.
 
-![Version](https://img.shields.io/badge/version-1.2-blue)
+![Version](https://img.shields.io/badge/version-1.3-blue)
 ![Platform](https://img.shields.io/badge/platform-Web-brightgreen)
 
 ---
