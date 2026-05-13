@@ -593,14 +593,20 @@
             cropOverlay.style.display = 'none';
         };
 
-        document.getElementById('clear-canvas').onclick = () => {
-            // Reset canvases
-            finalCanvas.width = 0; finalCanvas.height = 0;
-            tempCanvas.width = 0; tempCanvas.height = 0;
+        // Only clears canvas and answer inputs (used after save)
+        function clearCanvasOnly() {
+            finalCanvas.width = 0;
+            finalCanvas.height = 0;
+            tempCanvas.width = 0;
+            tempCanvas.height = 0;
             cropOverlay.style.display = 'none';
-
-            // Reset answer inputs
             clearAnswerInputs();
+        }
+
+        // Full reset (used by Reset button)
+        document.getElementById('clear-canvas').onclick = () => {
+            // Clear canvas only
+            clearCanvasOnly();
 
             // Reset linked folder
             directoryHandle = null;
@@ -651,8 +657,7 @@
                     await writable.write(blob);
                     await writable.close();
                     alert(`Saved! (Answer: ${answer})`);
-                    document.getElementById('clear-canvas').click();
-                    clearAnswerInputs();
+                    clearCanvasOnly();
                 });
             } catch (err) { alert("Save Error!"); }
         };
